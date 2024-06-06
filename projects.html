@@ -49,30 +49,80 @@
                                     <div class="card-body p-0">
                                         <h5 class="card-title">Slash Game, 2024 Unreal Engine 5</h5>
                                         <ul class="card-text">
-                                            <li>C++ programming (Unreal Engine reflection system,  usage of interfaces,  datastructures, inheritance, polymorphism, character’s controller, enemy’s advancedAI with state machine, treasure spawning system, Widgets and Niagaracomponents)</li>
-                                            <li>Animation Blueprints (State machine for character ́s and enemy ́s animation)</li>
+                                            <li>Full C++ implementation using reflection system, interfaces, data structures, inheritance and polymorphism</li>
+                                            <li>Creation of an open world System using packed level instances, foliage painting, landscape making and assets integration from Quixel Bridge</li>
+                                            <li>Creation of character’s controller, enemy’s advanced AI with state machine, treasure spawning system, Widgets and Niagara</li>
                                             <li>Visual Effects (usage of Niagara and Chaos destruction system for breakableobjects)</li>
-                                            <li>Open World System (Packed level instances, foliage painting, landscape making,assets integration)</li>
-                                            <li>UE5 features (usage of Motion Warping, Meta Sounds, Linked Anim Graphs,Control Rigs)Shipped to itch.io in 4 months</li>
+                                            <li>UE5 new features like Motion Warping, Meta Sounds, Linked Anim Graphs and Control Rigs</li>
                                         </ul>
                                     </div>
-                                    <img src="../assets/slash_game_code.jpeg" class="card-img-bottom p-2"/>
-                                </div>
+                                        <img src="../assets/LinkedAnimGraph.png" class="card-img-bottom p-2"/>
+                                        <div class = "card text-center">
+                                            <h5 class="card-title">Linked Anim Graph</h5>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>This is the Linked Anim Graph I created for the character’s differnt animations and States</li>
+                                            <li>Added montages for the character’s attacks</li>
+                                            <li>Created anim notifies for the montages and weapon collision enablement </li>
+                                            <li>Added cascade system for weapon trails</li>
+                                            <li>I added hit react montages for the character and all the enemies, with the code seen below</li> 
+                                        </ul>
+                                        <img src="../assets/slash_game_code.jpeg" class="card-img-bottom p-2"/>
+
+                                </div> 
                             </div>
+                            
 
                             <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
-                                <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
-                                        </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 bg-light">
+                                <img src="../assets/gameplay_FPS.gif" class="card-img-top" alt="...">
+                                <div class="p-5">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">Frequency based FPS, Unity 2022-2023</h5>
+                                        <ul class="card-text">
+                                            <li>Used Fourier Transform to obtain frequencies from any song and used them for controlling the entire gameplay</li>
+                                            <li>The lower frequencies control the platform's movement, medium ones control enemies speed of appearance and the higher control de environment the player is in</li>
+                                            <li>Created and designed UI that allowed the player to choose or upload any song from their computer</li>
+                                            <li>Depending on the song the player chooses, the diffculty with change, thanks to the frequencies system</li>
+                                            <li>Added a grappling hook mechanic for easier and better movement</li>
+                                        </ul>
                                     </div>
-                                </div>
+                                        <img src="../assets/FPS_game_move_code.png" class="card-img-bottom p-2"/>
+                                        <div class = "card text-center">
+                                            <h5 class="card-title">Platform Movement Code</h5>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>The savePosition() method saves the differents positions the platform will move, therefore I mulitply it's position by a low frequency and a scale multipier</li>
+                                            <li>The movePosition() method makes the platform follow the position created in the savePosition() method.</li>
+                                            <li>There is a method that selects random movement axis, that's why there are different moving states </li>
+                                        </ul>
+                                </div> 
                             </div>
-                        </div>
+                            <!-- Project Card 3-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5 bg-light">
+                                <img src="../assets/FPS_game_move_code.png" class="card-img-top" alt="...">
+                                <div class="p-5">
+                                    <div class="card-body p-0">
+                                        <h5 class="card-title">Run VR Game, Unity 2022</h5>
+                                        <ul class="card-text">
+                                            <li>Used Fourier Transform to obtain frequencies from any song and used them for controlling the entire gameplay</li>
+                                            <li>The lower frequencies control the platform's movement, medium ones control enemies speed of appearance and the higher control de environment the player is in</li>
+                                            <li>Created and designed UI that allowed the player to choose or upload any song from their computer</li>
+                                            <li>Depending on the song the player chooses, the diffculty with change, thanks to the frequencies system</li>
+                                            <li>Added a grappling hook mechanic for easier and better movement</li>
+                                        </ul>
+                                    </div>
+                                        <img src="../assets/FPS_game_move_code.png" class="card-img-bottom p-2"/>
+                                        <div class = "card text-center">
+                                            <h5 class="card-title">Platform Movement Code</h5>
+                                        </div>
+                                        <ul class="card-text">
+                                            <li>The savePosition() method saves the differents positions the platform will move, therefore I mulitply it's position by a low frequency and a scale multipier</li>
+                                            <li>The movePosition() method makes the platform follow the position created in the savePosition() method.</li>
+                                            <li>There is a method that selects random movement axis, that's why there are different moving states </li>
+                                        </ul>
+                                </div> 
+                            </div>
                     </div>
                 </div>
             </section>
